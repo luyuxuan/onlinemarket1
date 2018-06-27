@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hy.onlinemarket.activity.MainActivity"
+   >
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/caidan"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_kinds"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微淘"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:id="@+id/iv"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_me_menu"
+            />
+
+    </LinearLayout>
+
+   <ScrollView
+
+       android:layout_below="@id/ly"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:focusable="true"
+           android:focusableInTouchMode="true"
+
+           >
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/purple"
+               android:padding="12dp"
+               android:text="热门商品"
+               android:textSize="15dp" />
+
+           <com.hy.onlinemarket.view.FullGridView
+               android:id="@+id/gv1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:numColumns="2"
+               ></com.hy.onlinemarket.view.FullGridView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="最新商品"
+               android:padding="12dp"
+               android:background="@color/brown"
+               android:textSize="15dp"
+               android:numColumns="2"
+               />
+
+           <com.hy.onlinemarket.view.FullGridView
+               android:id="@+id/gv2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:numColumns="2"
+               ></com.hy.onlinemarket.view.FullGridView>
+
+           <TextView
+               android:id="@+id/textView3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/purple"
+               android:padding="12dp"
+               android:text="热门商品"
+               android:textSize="15dp" />
+
+           <com.hy.onlinemarket.view.FullGridView
+               android:id="@+id/gv3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:numColumns="2"
+               ></com.hy.onlinemarket.view.FullGridView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="最新商品"
+               android:padding="12dp"
+               android:background="@color/brown"
+               android:textSize="15dp"
+               android:numColumns="2"
+               />
+
+           <com.hy.onlinemarket.view.FullGridView
+               android:id="@+id/gv4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:numColumns="2"
+               ></com.hy.onlinemarket.view.FullGridView>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+     <ImageView
+         android:id="@+id/shopping"
+         android:layout_marginBottom="15dp"
+         android:layout_marginRight="15dp"
+         android:padding="10dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@mipmap/icon_bt_shopping_car"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true"
+         android:layout_marginEnd="15dp" />
+
+</RelativeLayout>

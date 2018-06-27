@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/v_bai_luo_bo"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="萝卜"
+        android:gravity="center_horizontal"
+        android:textColor="@color/green"
+        android:textSize="18dp"
+        />
+    <TextView
+        android:id="@+id/price"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="微淘价：￥4.78"
+        android:gravity="center_horizontal"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:padding="12dp"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="完成"
+            android:padding="12dp"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:dividerHeight="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            style="@android:style/Widget.CompoundButton.RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="全选" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="总计："
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/priceAll"
+            android:padding="12dp"
+            android:textColor="@color/red"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="￥：0.00"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_buy"
+            android:background="@drawable/selectot_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="结算"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_del"
+            android:background="@drawable/selectot_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+       />
+
+    </LinearLayout>
+
+
+</LinearLayout>
